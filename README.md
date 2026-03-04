@@ -1,6 +1,6 @@
-# November Five — Agent Skills
+# November Five — Skills
 
-A public library of **Agent Skills** maintained by [November Five](https://novemberfive.co).
+A public library of **Skills** maintained by [November Five](https://novemberfive.co).
 
 Skills are structured instruction sets that AI assistants and agents load dynamically to perform specialized tasks consistently. They encode how we work — our engineering standards, architecture patterns, communication conventions, and tooling workflows — so any AI tool used across the team operates with the same shared context.
 

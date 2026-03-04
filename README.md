@@ -87,7 +87,7 @@ This repository is maintained exclusively by the team at [November Five](https:/
 You are welcome to clone or fork this repository and adapt the skills for your own team:
 
 ```bash
-git clone https://github.com/novemberfive/skills.git
+git clone https://github.com/novemberfiveco/skills.git
 ```
 
 If a skill inspires you or you build something on top of it, we'd love to hear about it — feel free to open a Discussion or reach out at [hello@novemberfive.co](mailto:hello@novemberfive.co).

@@ -14,7 +14,7 @@ A skill is a folder containing a `SKILL.md` file with a description and a set of
 
 Think of skills as reusable, version-controlled expertise: write them once, use them everywhere.
 
-```
+```text
 skills/
 └── my-skill-name/
     ├── SKILL.md          ← instructions and metadata
@@ -41,7 +41,7 @@ The `SKILL.md` format is plain Markdown with a small YAML frontmatter block — 
 
 ## Skill template
 
-~~~markdown
+```markdown
 ---
 name: my-skill-name
 description: >
@@ -76,7 +76,7 @@ tags:
 
 - Guideline 1
 - Guideline 2
-~~~
+```
 
 ---
 

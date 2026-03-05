@@ -39,6 +39,34 @@ The `SKILL.md` format is plain Markdown with a small YAML frontmatter block — 
 
 ---
 
+## Installation
+
+Use the `skills` CLI to add individual skills from this repository directly into your project:
+
+```bash
+# Install a specific skill
+npx skills add https://github.com/novemberfiveco/skills --skill <skill-name>
+
+# Example
+npx skills add https://github.com/novemberfiveco/skills --skill example
+```
+
+This copies the skill folder into your local `.skills/` directory, ready to be picked up by your AI tool of choice.
+
+To install all skills at once:
+
+```bash
+npx skills add https://github.com/novemberfiveco/skills
+```
+
+Or clone the repository directly if you want to browse or adapt everything locally:
+
+```bash
+git clone https://github.com/novemberfiveco/skills.git
+```
+
+---
+
 ## Skill template
 
 ```markdown
@@ -83,12 +111,6 @@ tags:
 ## Using this repository
 
 This repository is maintained exclusively by the team at [November Five](https://novemberfive.co). We are not accepting external contributions at this time.
-
-You are welcome to clone or fork this repository and adapt the skills for your own team:
-
-```bash
-git clone https://github.com/novemberfiveco/skills.git
-```
 
 If a skill inspires you or you build something on top of it, we'd love to hear about it — feel free to open a Discussion or reach out at [hello@novemberfive.co](mailto:hello@novemberfive.co).
 

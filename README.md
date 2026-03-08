@@ -66,6 +66,15 @@ claude plugin marketplace add https://github.com/novemberfiveco/skills
 claude plugin install november-five-skills
 ```
 
+### Claude Cowork
+
+1. Go to the **Cowork** tab in Claude
+2. Select **Customize** in the side menu
+3. Add a **Personal plugin** and enter the repository URL:
+   ```
+   https://github.com/novemberfiveco/skills
+   ```
+
 ### Cursor
 
 Add the marketplace URL in your Cursor team marketplace settings:

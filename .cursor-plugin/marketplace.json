@@ -1,0 +1,19 @@
+{
+  "name": "november-five",
+  "owner": {
+    "name": "November Five",
+    "email": "hello@novemberfive.co"
+  },
+  "metadata": {
+    "description": "November Five marketplace — a public library of skills, commands, and workflows for AI-assisted development",
+    "version": "1.0.0",
+    "pluginRoot": "."
+  },
+  "plugins": [
+    {
+      "name": "november-five-skills",
+      "source": "november-five-skills",
+      "description": "November Five's public skills library — reusable, version-controlled expertise for AI assistants and agents"
+    }
+  ]
+}

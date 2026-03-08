@@ -1,0 +1,11 @@
+{
+  "name": "november-five-skills",
+  "displayName": "November Five Skills",
+  "version": "1.0.0",
+  "description": "November Five's public skills library — reusable, version-controlled expertise for AI assistants and agents",
+  "author": {
+    "name": "November Five",
+    "email": "hello@novemberfive.co"
+  },
+  "keywords": ["skills", "workflows", "conventions", "ai-assistants"]
+}

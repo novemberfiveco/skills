@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "november-five",
+  "description": "November Five marketplace — a public library of skills, commands, and workflows for AI-assisted development",
+  "owner": {
+    "name": "November Five",
+    "email": "hello@novemberfive.co"
+  },
+  "plugins": [
+    {
+      "name": "november-five-skills",
+      "description": "November Five's public skills library — reusable, version-controlled expertise for AI assistants and agents",
+      "version": "1.0.0",
+      "author": {
+        "name": "November Five",
+        "email": "hello@novemberfive.co"
+      },
+      "source": "./november-five-skills",
+      "category": "productivity"
+    }
+  ]
+}

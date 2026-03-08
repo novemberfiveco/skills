@@ -16,6 +16,22 @@ Think of skills as reusable, version-controlled expertise: write them once, use 
 
 ```text
 skills/
+├── .claude-plugin/
+│   └── marketplace.json        ← Claude Code marketplace manifest
+├── .cursor-plugin/
+│   └── marketplace.json        ← Cursor marketplace manifest
+├── november-five-skills/
+│   ├── .claude-plugin/
+│   │   └── plugin.json         ← Claude plugin manifest
+│   ├── .cursor-plugin/
+│   │   └── plugin.json         ← Cursor plugin manifest
+│   ├── commands/               ← slash commands
+│   ├── skills/                 ← skill definitions
+│   └── README.md
+└── ...
+
+# Each skill follows this structure:
+skills/
 └── my-skill-name/
     ├── SKILL.md          ← instructions and metadata
     └── assets/           ← optional: scripts, templates, examples
@@ -30,8 +46,8 @@ These skills follow the open [Agent Skills specification](https://agentskills.io
 | Tool | How |
 |---|---|
 | **Claude** (claude.ai / API) | Upload via Settings → Skills, or use the Skills API |
-| **Claude Code** | Install via `/plugin marketplace add novemberfive/skills` |
-| **Cursor** | Reference skill files in `.cursor/skills` or via MCP |
+| **Claude Code** | Install via the marketplace (see [Installation](#installation)) |
+| **Cursor** | Add via team marketplace settings (see [Installation](#installation)) |
 | **Any MCP-compatible agent** | Serve skills as context through an MCP server |
 | **Custom agents** | Load `SKILL.md` content into your system prompt at runtime |
 
@@ -41,25 +57,42 @@ The `SKILL.md` format is plain Markdown with a small YAML frontmatter block — 
 
 ## Installation
 
-Use the `skills` CLI to add individual skills from this repository directly into your project:
+### Claude Code
+
+Add the November Five marketplace and install the skills plugin:
+
+```bash
+claude plugin marketplace add https://github.com/novemberfiveco/skills
+claude plugin install november-five-skills
+```
+
+### Cursor
+
+Add the marketplace URL in your Cursor team marketplace settings:
+
+```
+https://github.com/novemberfiveco/skills
+```
+
+The `november-five-skills` plugin will then be available for installation.
+
+### Skills CLI
+
+Use the `skills` CLI to add individual skills directly into your project:
 
 ```bash
 # Install a specific skill
 npx skills add https://github.com/novemberfiveco/skills --skill <skill-name>
 
-# Example
-npx skills add https://github.com/novemberfiveco/skills --skill example
+# Install all skills
+npx skills add https://github.com/novemberfiveco/skills
 ```
 
 This copies the skill folder into your local `.skills/` directory, ready to be picked up by your AI tool of choice.
 
-To install all skills at once:
+### Manual
 
-```bash
-npx skills add https://github.com/novemberfiveco/skills
-```
-
-Or clone the repository directly if you want to browse or adapt everything locally:
+Clone the repository directly if you want to browse or adapt everything locally:
 
 ```bash
 git clone https://github.com/novemberfiveco/skills.git

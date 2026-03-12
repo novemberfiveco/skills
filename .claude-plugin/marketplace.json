@@ -1,0 +1,33 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "november-five",
+  "description": "November Five marketplace — virtual employees with specialized skill sets for AI-assisted development",
+  "owner": {
+    "name": "November Five",
+    "email": "hello@novemberfive.co"
+  },
+  "plugins": [
+    {
+      "name": "n5-engineer",
+      "description": "N5 Engineer — your virtual engineering partner for health checks, code quality, architecture reviews, and DevOps workflows",
+      "version": "1.0.0",
+      "author": {
+        "name": "November Five",
+        "email": "hello@novemberfive.co"
+      },
+      "source": "./n5-engineer",
+      "category": "productivity"
+    },
+    {
+      "name": "n5-designer",
+      "description": "N5 Designer — your virtual design partner for design systems, accessibility audits, UI reviews, and design-to-code workflows",
+      "version": "1.0.0",
+      "author": {
+        "name": "November Five",
+        "email": "hello@novemberfive.co"
+      },
+      "source": "./n5-designer",
+      "category": "productivity"
+    }
+  ]
+}

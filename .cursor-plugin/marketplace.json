@@ -1,0 +1,24 @@
+{
+  "name": "november-five",
+  "owner": {
+    "name": "November Five",
+    "email": "hello@novemberfive.co"
+  },
+  "metadata": {
+    "description": "November Five marketplace — virtual employees with specialized skill sets for AI-assisted development",
+    "version": "1.0.0",
+    "pluginRoot": "."
+  },
+  "plugins": [
+    {
+      "name": "n5-engineer",
+      "source": "n5-engineer",
+      "description": "N5 Engineer — your virtual engineering partner for health checks, code quality, architecture reviews, and DevOps workflows"
+    },
+    {
+      "name": "n5-designer",
+      "source": "n5-designer",
+      "description": "N5 Designer — your virtual design partner for design systems, accessibility audits, UI reviews, and design-to-code workflows"
+    }
+  ]
+}

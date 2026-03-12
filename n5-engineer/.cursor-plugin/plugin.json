@@ -1,0 +1,11 @@
+{
+  "name": "n5-engineer",
+  "displayName": "N5 Engineer",
+  "version": "1.0.0",
+  "description": "N5 Engineer — your virtual engineering partner for health checks, code quality, architecture reviews, and DevOps workflows",
+  "author": {
+    "name": "November Five",
+    "email": "hello@novemberfive.co"
+  },
+  "keywords": ["engineering", "health-check", "code-quality", "architecture", "devops"]
+}

@@ -4,7 +4,37 @@ A public library of **Skills** maintained by [November Five](https://novemberfiv
 
 Skills are structured instruction sets that AI assistants and agents load dynamically to perform specialized tasks consistently. They encode how we work — our engineering standards, architecture patterns, communication conventions, and tooling workflows — so any AI tool used across the team operates with the same shared context.
 
-This repository is shared publicly to contribute back to the community and to serve as practical examples for other teams building their own skill libraries.
+This repository is organized around **virtual employees** — role-based personas, each with their own skill set. Install the ones that match the expertise you need.
+
+---
+
+## Virtual Employees
+
+| Plugin | Role | Highlights |
+|--------|------|------------|
+| **[N5 Engineer](./n5-engineer/)** | Engineering partner | Health checks, code quality, architecture reviews, DevOps workflows |
+| **[N5 Designer](./n5-designer/)** | Design partner | Design systems, accessibility audits, UI reviews, design-to-code workflows |
+
+```text
+skills/
+├── .claude-plugin/
+│   └── marketplace.json              ← Claude Code marketplace manifest
+├── .cursor-plugin/
+│   └── marketplace.json              ← Cursor marketplace manifest
+├── n5-engineer/
+│   ├── .claude-plugin/plugin.json    ← Claude plugin manifest
+│   ├── .cursor-plugin/plugin.json    ← Cursor plugin manifest
+│   ├── commands/                     ← slash commands
+│   ├── skills/                       ← skill definitions
+│   └── README.md
+├── n5-designer/
+│   ├── .claude-plugin/plugin.json
+│   ├── .cursor-plugin/plugin.json
+│   ├── commands/
+│   ├── skills/
+│   └── README.md
+└── ...
+```
 
 ---
 
@@ -15,21 +45,6 @@ A skill is a folder containing a `SKILL.md` file with a description and a set of
 Think of skills as reusable, version-controlled expertise: write them once, use them everywhere.
 
 ```text
-skills/
-├── .claude-plugin/
-│   └── marketplace.json        ← Claude Code marketplace manifest
-├── .cursor-plugin/
-│   └── marketplace.json        ← Cursor marketplace manifest
-├── november-five-skills/
-│   ├── .claude-plugin/
-│   │   └── plugin.json         ← Claude plugin manifest
-│   ├── .cursor-plugin/
-│   │   └── plugin.json         ← Cursor plugin manifest
-│   ├── commands/               ← slash commands
-│   ├── skills/                 ← skill definitions
-│   └── README.md
-└── ...
-
 # Each skill follows this structure:
 skills/
 └── my-skill-name/
@@ -59,11 +74,12 @@ The `SKILL.md` format is plain Markdown with a small YAML frontmatter block — 
 
 ### Claude Code
 
-Add the November Five marketplace and install the skills plugin:
+Add the November Five marketplace and install the virtual employee(s) you need:
 
 ```bash
 claude plugin marketplace add https://github.com/novemberfiveco/skills
-claude plugin install november-five-skills
+claude plugin install n5-engineer
+claude plugin install n5-designer
 ```
 
 ### Claude Cowork
@@ -83,7 +99,7 @@ Add the marketplace URL in your Cursor team marketplace settings:
 https://github.com/novemberfiveco/skills
 ```
 
-The `november-five-skills` plugin will then be available for installation.
+The `n5-engineer` and `n5-designer` plugins will then be available for installation.
 
 ### Skills CLI
 

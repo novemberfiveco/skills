@@ -1,0 +1,11 @@
+{
+  "name": "n5-designer",
+  "displayName": "N5 Designer",
+  "version": "1.0.0",
+  "description": "N5 Designer — your virtual design partner for design systems, accessibility audits, UI reviews, and design-to-code workflows",
+  "author": {
+    "name": "November Five",
+    "email": "hello@novemberfive.co"
+  },
+  "keywords": ["design", "design-systems", "accessibility", "ui-review", "design-to-code"]
+}
